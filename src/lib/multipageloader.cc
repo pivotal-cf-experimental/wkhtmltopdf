@@ -283,7 +283,7 @@ void ResourceObject::loadDone() {
 	// Ensure no more loading goes..
 	webPage.triggerAction(QWebPage::Stop);
 	webPage.triggerAction(QWebPage::StopScheduledPageRefresh);
-	networkAccessManager.dispose();
+	//networkAccessManager.dispose();
 	//disconnect(this, 0, 0, 0);
 
 	--multiPageLoader.loading;
